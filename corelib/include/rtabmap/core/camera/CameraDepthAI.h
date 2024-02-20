@@ -102,6 +102,7 @@ private:
 	std::shared_ptr<dai::DataOutputQueue> featuresQueue_;
 	std::map<double, cv::Vec3f> accBuffer_;
 	std::map<double, cv::Vec3f> gyroBuffer_;
+	std::map<double, cv::Vec4f> rotBuffer_;
 	UMutex imuMutex_;
 #endif
 };
